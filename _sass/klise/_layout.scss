@@ -12,6 +12,34 @@
 }
 
 // Navigation
+
+  .home {
+    display: none;
+    @include media-query($on-mobile) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+      padding-top: 13px;
+      display: block !important;
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      &:active {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+      }
+      a#home {
+        fill: $black;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+}
+
 .menu {
   user-select: none;
   -ms-user-select: none;
@@ -181,7 +209,7 @@
 
 // Author
 .author {
-  margin-top: 6.3rem;
+  margin-top: 3rem;
   margin-bottom: 7.2rem;
   text-align: center;
 

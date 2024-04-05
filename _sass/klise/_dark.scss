@@ -132,6 +132,14 @@ body[data-theme="dark"] {
           display: none;
         }
       }
+      
+      a#home {
+        fill: $dark-white;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
 
       .menu-link {
         color: $dark-white;
