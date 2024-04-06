@@ -31,7 +31,7 @@
         transform: scale(0.9, 0.9);
       }
       a#home {
-        fill: $black;
+        stroke: $black;
         opacity: 0.7;
         &:hover {
           opacity: 1;
@@ -210,12 +210,8 @@
 // Author
 .author {
   margin-top: 3rem;
-  margin-bottom: 7.2rem;
+  margin-bottom: 1rem;
   text-align: center;
-
-  @include media-query($on-mobile) {
-    margin-bottom: 3em;
-  }
 
   .author-avatar {
     width: 70px;
@@ -251,6 +247,13 @@
   color: $black;
 }
 
+// Button
+.btn {
+  padding-bottom: 0.5rem;
+}
+.cap {
+  fill: $black;
+}
 // List of posts
 .post-item {
   display: flex;
