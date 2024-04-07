@@ -11,8 +11,12 @@
   @extend %clearfix;
 }
 
-// Navigation
-
+// Navigation  
+  .hom {
+    @include media-query($on-mobile) {
+      display: none !important; 
+    }
+  }
   .home {
     display: none;
     @include media-query($on-mobile) {
@@ -38,7 +42,7 @@
         }
       }
     }
-}
+  }
 
 .menu {
   user-select: none;
